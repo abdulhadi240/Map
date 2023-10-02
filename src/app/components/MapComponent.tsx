@@ -1,4 +1,4 @@
-//1. Import dependencies for React, Leaflet and other functionalities.
+'use client'
 import React, { useState, useEffect, useRef, FC } from "react";
 import { MapContainer, TileLayer, Marker, Popup, useMapEvents, useMap } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
@@ -129,7 +129,7 @@ const MapComponent: FC = () => {
             type="text"
             value={inputValue}
             onChange={(e) => setInputValue(e.target.value)}
-            className="flex-grow p-2 border rounded-md"
+            className="flex-grow p-2 border rounded-md text-black"
             onKeyPress={(e) => {
               if (e.key === "Enter") handleSubmit();
             }}
