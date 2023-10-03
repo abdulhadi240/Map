@@ -4,6 +4,7 @@ const DynamicMapComponent = dynamic(() => import("./components/MapComponent"), {
 const MyPage = () => {
   return (
     <div>
+      
       <DynamicMapComponent />
     </div>
   );

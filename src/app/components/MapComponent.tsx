@@ -101,7 +101,7 @@ const MapComponent: FC = () => {
       {/* 19. Conditionally render the title overlay. */}
       {markerData && markerData.coordinates && (
         <div className="flex items-center justify-center absolute top-3 right-3 z-[100000]">
-          <h1 className="text-3xl font-bold text-black p-2 bg-white rounded-md z-[100000]">{markerData.title}</h1>
+          <h1 className="text-sm font-semibold text-black p-2 bg-white rounded-md z-[100000]">{markerData.title}</h1>
         </div>
       )}
       {/* 20. Add the map container. */}
@@ -122,7 +122,7 @@ const MapComponent: FC = () => {
         <div className="flex justify-center">
           {submittedQuestion && (
             <div className="flex items-center justify-center bottom-16 absolute w-full z-[100000]">
-              <h1 className="text-3xl font-bold text-black p-2 bg-white rounded-md">{submittedQuestion}</h1>
+              <h1 className="text-sm font-semibold text-black p-2 bg-white rounded-md">{submittedQuestion}</h1>
             </div>
           )}
           <input
